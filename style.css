@@ -14,6 +14,8 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
+/* Header */
 header {
   position: absolute;
   left: 0px;
@@ -81,6 +83,7 @@ header .navbar ul li a.active::before {
   left: 0;
 }
 
+/* Home */
 .home {
   min-height: 100vh;
   background-image: url("Images/markus-spiske-hvSr_CVecVI-unsplash.jpg");
@@ -147,4 +150,78 @@ header .navbar ul li a.active::before {
 .home .home-content .block .resume-butt a:hover {
   background-color: #ffffff;
   color: #000000;
+}
+
+/* About Me */
+.about-me {
+  padding: 100px 15px;
+  background-color: #ffffff;
+}
+.about-me .section-title {
+  flex: 0 0 100%;
+  max-width: 100;
+  margin-left: 80px;
+}
+.about-me .section-title h1 {
+  display: inline-block;
+  font-size: 35px;
+  font-weight: 600;
+  color: #000000;
+  margin: 0 0 10px;
+  position: relative;
+}
+.about-me .section-title h1::before {
+  content: "";
+  left: 0;
+  height: 2px;
+  right: 35%;
+  background-color: #08aff1;
+  bottom: 0px;
+  position: absolute;
+}
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+.about-me .section-title p.small {
+  display: block;
+  font-size: 14px;
+  color: #727272;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.about-me .about-content .pic {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  margin-left: -30px;
+}
+.about-me .about-content .pic img {
+  width: 100%;
+  display: block;
+}
+.about-me .about-content .text {
+  flex: 0 0 66.66%;
+  max-width: 66.66%;
+  padding-left: 30px;
+}
+.about-me .about-content .text h4 {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0 0 5px;
+  color: #000000;
+}
+.about-me .about-content .text h6 {
+  font-size: 18px;
+  font-weight: 550;
+  margin: 0 0 15px;
+  color: #000000;
+}
+.about-me .about-content .text h6 span {
+  color: #08aff1;
+}
+.about-me .about-content .text p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
 }
