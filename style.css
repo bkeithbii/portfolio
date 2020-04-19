@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+}
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+header {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  border-bottom: 1px solid #cecccc;
+  padding: 0px 15px;
+}
+header .row {
+  justify-content: space-between;
+  align-items: center;
+}
+header .brand-name a {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header .navbar ul li {
+  display: inline-block;
+  margin-left: 35px;
+}
+header .navbar ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  line-height: 72px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.home {
+  min-height: 100vh;
+  background-image: url("Images/markus-spiske-hvSr_CVecVI-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
