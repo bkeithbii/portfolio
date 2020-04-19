@@ -20,6 +20,8 @@ header {
   right: 0px;
   border-bottom: 1px solid #cecccc;
   padding: 0px 15px;
+  background-color: #8d8d8dc4;
+  z-index: 10;
 }
 header .row {
   justify-content: space-between;
@@ -30,6 +32,16 @@ header .brand-name a {
   font-size: 22px;
   font-weight: 600;
   color: #ffffff;
+  position: relative;
+}
+header .brand-name a::before {
+  content: "";
+  height: 3px;
+  background-color: #ffffff;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
 }
 
 header .navbar ul {
@@ -47,10 +59,92 @@ header .navbar ul li a {
   line-height: 72px;
   font-weight: 600;
   color: #ffffff;
+  display: block;
+  position: relative;
 }
+header .navbar ul li a::before {
+  content: "";
+  height: 3px;
+  background-color: #ffffff;
+  width: 0;
+  position: absolute;
+  right: 0px;
+  bottom: -1px;
+  transition: all 0.5s ease;
+}
+header .navbar ul li a:hover::before {
+  width: 100%;
+  left: 0;
+}
+header .navbar ul li a.active::before {
+  width: 100%;
+  left: 0;
+}
+
 .home {
   min-height: 100vh;
   background-image: url("Images/markus-spiske-hvSr_CVecVI-unsplash.jpg");
   background-size: cover;
   background-position: center;
+  padding: 15px;
+}
+.home .full-screen {
+  min-height: 100vh;
+}
+.home .home-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.home .home-content .block {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding-left: 35px;
+  border-left: 5px solid #ffffff;
+  margin-top: 50px;
+}
+.home .home-content .block h6 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+.home .home-content .block h1 {
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+.home .home-content .block h3 {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+.home .home-content .block .resume-butt {
+  padding-top: 20px;
+}
+.home .home-content .block .resume-butt a {
+  border-radius: 4px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 12px 25px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+.home .home-content .block .resume-butt a:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
