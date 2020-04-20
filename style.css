@@ -286,7 +286,7 @@ header .navbar ul li a.active::before {
 .skills .skills-content {
   flex: 0 0 50%;
   max-width: 50%;
-  padding-right: 30px;
+  padding-right: 40px;
 }
 .skills .pic {
   background-color: blue;
@@ -325,7 +325,7 @@ header .navbar ul li a.active::before {
   margin: -5px 0 8px;
 }
 .skills .skills-content .skill-container .skill-bar {
-  height: 6px;
+  height: 5px;
   background-color: #eeeeee;
   position: relative;
 }
@@ -335,4 +335,12 @@ header .navbar ul li a.active::before {
   left: 0;
   top: 0;
   height: 100%;
+}
+.skills .skills-content .skill-container .skill-bar .skill-bar-in span {
+  color: #696969;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  right: 0;
+  top: -30px;
 }
