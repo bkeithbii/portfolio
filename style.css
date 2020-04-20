@@ -225,4 +225,29 @@ header .navbar ul li a.active::before {
   font-weight: 400;
   line-height: 24px;
   color: #000000;
+  margin: 0 0 10px;
+}
+.about-me .about-content .text .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.about-me .about-content .text .info .info-list {
+  flex: 0 0 calc(50% - 15px);
+  max-width: calc(50% - 15px);
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #cecccc;
+  padding-bottom: 10px;
+}
+.about-me .about-content .text .info .info-list label {
+  padding-right: 10px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 15px;
+}
+.about-me .about-content .text .info .info-list p {
+  margin: 0;
 }
