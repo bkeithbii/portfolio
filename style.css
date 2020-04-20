@@ -277,3 +277,33 @@ header .navbar ul li a.active::before {
   color: #ffffff;
   font-size: 18px;
 }
+
+/* Skills */
+.skills {
+  padding: 100px 15px;
+  background-color: #ffffff;
+}
+.skills-content {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 30px;
+}
+.skills .pic {
+  background-color: blue;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.align-items-center {
+  align-items: center;
+}
+.skills .pic img {
+  width: 100%;
+  display: block;
+}
+.skills .skills-content .section-title p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #8d8d8dc4;
+  margin: 15px 0 20px;
+}
