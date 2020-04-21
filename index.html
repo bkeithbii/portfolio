@@ -322,7 +322,12 @@
               </div>
             </div>
 
-            <form>
+            <form
+              onsubmit="return validation()"
+              method="post"
+              name="my-form"
+              action="form-to-email.php"
+            >
               <div class="row space-between">
                 <div class="input-field">
                   <input
@@ -355,7 +360,7 @@
               <div class="row">
                 <div class="button text-center">
                   <!-- <a href="">Submit</a> -->
-                  <input type="submit" />
+                  <input type="submit" value="Submit" />
                 </div>
               </div>
             </form>
