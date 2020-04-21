@@ -622,16 +622,18 @@ h5 {
   padding: 0;
 }
 
-.contact-me .contact-form .text #error-message {
+.contact-me .contact-form .status {
   padding: 0px;
-  background-color: #f52323;
+  color: #f52323;
   text-align: center;
   font-size: 14px;
-  color: black;
   transition: all 0.5s ease;
   margin-top: 10px;
-  margin-bottom: 5px;
   width: 30%;
+  font-family: "Roboto Mono", monospace;
+  margin-left: 50%;
+  transform: translate(-50%);
+  line-height: 20px;
 }
 
 .contact-me .contact-form .space-between {

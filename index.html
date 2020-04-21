@@ -318,51 +318,48 @@
             <div class="row">
               <div class="text">
                 <h2>Let's Connect!</h2>
-                <div id="error-message"></div>
               </div>
             </div>
 
             <form
-              onsubmit="return validation()"
-              method="post"
-              name="my-form"
-              action="form-to-email.php"
+              action="https://formspree.io/bkbrown.dev@gmail.com"
+              method="POST"
             >
               <div class="row space-between">
                 <div class="input-field">
                   <input
                     type="text"
-                    class="form-control"
-                    name="name"
+                    class="form-control name"
                     placeholder="Name"
-                    id="name"
+                    name="Name"
                   />
                 </div>
                 <div class="input-field">
                   <input
                     type="text"
-                    class="form-control"
-                    name="email"
+                    class="form-control email"
                     placeholder="Email"
-                    id="email"
+                    name="Email"
                   />
                 </div>
               </div>
               <div class="row">
                 <div class="message-field">
                   <textarea
-                    class="form-control"
-                    name="message"
-                    placeholder="Message"
-                    id="message"
+                    type="text"
+                    class="form-control message"
+                    placeholder="Message (must be greater than 20 characters)"
+                    name="Message"
                   ></textarea>
                 </div>
               </div>
               <div class="row">
                 <div class="button text-center">
-                  <input type="submit" value="Submit" />
+                  <input type="submit" value="Submit" class="submit" />
                 </div>
               </div>
+
+              <h6 class="status"></h6>
             </form>
           </div>
         </div>
@@ -370,6 +367,9 @@
     </section>
     <!-- End Contact Me  -->
 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js
+
+    "></script>
     <script src="script.js"></script>
   </body>
 </html>

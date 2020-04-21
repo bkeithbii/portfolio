@@ -62,40 +62,37 @@ galleryItem.forEach(function (element) {
     });
 });
 
-// Validation
-function validation() {
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let message = document.getElementById("message").value;
-  let error_message = document.getElementById("error-message");
-  let text;
+$(document).ready(function () {
+  $(".submit").click(function () {
+    console.log("Clicked button");
 
-  error_message.style.padding = "10px";
+    let name = $(".name").val();
+    let email = $(".email").val();
+    let message = $(".message").val();
+    let status = $(".status");
 
-  if (name.length < 5) {
-    text = "Please Enter Valid Name";
-    error_message.innerHTML = text;
-    return false;
-  } else {
-    error_message.style.padding = "0px";
-  }
+    if (name.length >= 3) {
+      status.append("<div>Name is valid</div>");
+    } else {
+      event.preventDefault();
 
-  if (email.indexOf("@") == -1 || email.length < 6) {
-    text = "Please Enter Valid Email";
-    error_message.innerHTML = text;
-    return false;
-  } else {
-    error_message.style.padding = "0px";
-  }
+      status.append("<div>Please provide a name</div>");
+    }
 
-  if (message.length <= 60) {
-    text = "Please Enter More Than 60 Characters";
-    error_message.innerHTML = text;
-    return false;
-  } else {
-    error_message.style.padding = "0px";
-  }
-  alert("Submitted Successfully!");
+    if (email.length > 5 && email.includes("@") && email.includes(".")) {
+      status.append("<div>Email is valid</div>");
+    } else {
+      event.preventDefault();
 
-  return false;
-}
+      status.append("<div>Email invalid</div>");
+    }
+
+    if (message.length >= 20) {
+      status.append("<div>Message is valid</div>");
+    } else {
+      event.preventDefault();
+
+      status.append("<div>Message invalid</div>");
+    }
+  });
+});
