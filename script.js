@@ -76,18 +76,24 @@ function validation() {
     text = "Please Enter Valid Name";
     error_message.innerHTML = text;
     return false;
+  } else {
+    error_message.style.padding = "0px";
   }
 
   if (email.indexOf("@") == -1 || email.length < 6) {
     text = "Please Enter Valid Email";
     error_message.innerHTML = text;
     return false;
+  } else {
+    error_message.style.padding = "0px";
   }
 
   if (message.length <= 60) {
-    text = "Please Enter More Than 120 Characters";
+    text = "Please Enter More Than 60 Characters";
     error_message.innerHTML = text;
     return false;
+  } else {
+    error_message.style.padding = "0px";
   }
   alert("Submitted Successfully!");
 
