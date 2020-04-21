@@ -59,6 +59,5 @@ galleryItem.forEach(function (element) {
       modal.classList.remove("hide");
       modal.classList.add("show");
       modalImage.src = element.querySelector("img").getAttribute("src");
-      //   console.log(element.querySelector("img").getAttribute("src"));
     });
 });
