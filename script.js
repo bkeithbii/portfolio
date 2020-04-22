@@ -62,6 +62,7 @@ galleryItem.forEach(function (element) {
     });
 });
 
+// Contact Form
 $(document).ready(function () {
   $(".submit").click(function () {
     console.log("Clicked button");
