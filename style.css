@@ -834,8 +834,9 @@ footer .social a:hover {
     padding-top: 30px;
   }
   .about-me .about-content .pic {
-    flex: 0 0 75%;
-    max-width: 75%;
+    flex: 0 0 90%;
+    max-width: 90%;
+    padding-left: 150px;
   }
 
   .skills .skills-content {
