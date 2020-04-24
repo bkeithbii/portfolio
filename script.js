@@ -14,11 +14,13 @@ for (let i = 0; i < filterButtons.length; i++) {
     for (let k = 0; k < items.length; k++) {
       items[k].style.display = "none";
       if (target == items[k].getAttribute("data-id")) {
-        items[k].style.flex = "0 0 calc(33.33% - 5px)";
-        items[k].style.maxWidth = "calc(33.33% - 5px)";
+        // items[k].style.flex = "0 0 45%";
+        // items[k].style.maxWidth = "45%";
         items[k].style.display = "flex";
         items[k].style.flexWrap = "wrap";
-        items[k].style.justifyContent = "space-between";
+        items[k].style.flexDirection = "row";
+        items[k].style.justifyContent = "center";
+        items[k].style.padding = "20px";
       }
       if (target == "all") {
         items[k].style.flex = "0 0 calc(33.33% - 5px)";
@@ -121,5 +123,13 @@ a.forEach(function (element) {
       a[i].classList.remove("active");
     }
     this.classList.add("active");
+    document.querySelector(".navbar").classList.toggle("show");
   });
+});
+
+// Hamburger
+const hamburger = document.querySelector(".ham-burger");
+
+hamburger.addEventListener("click", function () {
+  document.querySelector(".navbar").classList.toggle("show");
 });
