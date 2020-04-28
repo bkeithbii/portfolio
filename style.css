@@ -56,7 +56,7 @@ header {
   right: 0px;
   border-bottom: 1px solid #cecccc;
   padding: 0px 15px;
-  background-color: #8d8d8dc4;
+  background-color: #9292929c;
   z-index: 10;
 }
 header.fixed {
@@ -113,10 +113,11 @@ header .navbar ul li a {
   font-size: 15px;
   text-decoration: none;
   line-height: 72px;
-  font-weight: 600;
+  font-weight: 900;
   color: #ffffff;
   display: block;
   position: relative;
+  text-shadow: #000000;
 }
 header.fixed .navbar ul li a {
   color: #000000;
@@ -911,6 +912,14 @@ footer .social a:hover {
   .projects .projects-gallery .item {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .about-me .about-content .pic {
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    height: 300px;
+    margin-bottom: -100px;
+    padding-right: 25px;
   }
   .about-me .about-content .text .info .info-list p {
     flex: 0 0 100%;
